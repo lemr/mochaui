@@ -255,6 +255,7 @@ MUI.Tree = new NamedClass('MUI.Tree', {
 			ul.childNodes[ul.childNodes.length - 1].addClass('last');
 		} else li.addClass('nochild');
 		if (node.isExpanded) li.set('class', 'O');
+        if (node.nodes) li.set('class', 'O');
 
 		// add image to node if necessary
 		this._nodeSetImage(node);

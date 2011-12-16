@@ -140,7 +140,6 @@ MUI.Menu = new NamedClass('MUI.Menu', {
 				ul=this.getChildren('UL');
 				this.addClass('hover');
 			}).addEvent('mouseleave', function(e){
-				console.log(e.target.tagName);
 				this.removeClass('hover');
 			});
 
